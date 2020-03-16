@@ -1,0 +1,232 @@
+<html>
+<head>
+<title>upload</title>
+
+<meta charset="utf-8">
+<title>Text to speech model</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+
+
+<style>
+
+
+.button1{
+	background-color: crimson;
+	border: none;
+	color: white;
+	padding: 8px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 12px;
+}
+
+.button2{
+	background-color: silver;
+	border: none;
+	color: white;
+	padding: 8px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 12px;
+}
+.navbar-brand{
+  font-size:30px;
+  color:#fff !important;
+  font-weight:bold;
+}
+.sidenav {
+    height: 100%;
+    background-color: #55989f;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color:silver;
+}
+
+
+.pink-textarea textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #f48fb1;
+  box-shadow: 0 1px 0 0 #f48fb1;
+}
+.active-pink-textarea.md-form label.active {
+  color: #f48fb1;
+}
+.active-pink-textarea.md-form textarea.md-textarea:focus:not([readonly])+label {
+  color: #f48fb1;
+}
+
+
+.amber-textarea textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #ffa000;
+  box-shadow: 0 1px 0 0 #ffa000;
+}
+.active-amber-textarea.md-form label.active {
+  color: #ffa000;
+}
+.active-amber-textarea.md-form textarea.md-textarea:focus:not([readonly])+label {
+  color: #ffa000;
+}
+
+
+.active-pink-textarea-2 textarea.md-textarea {
+  border-bottom: 1px solid #f48fb1;
+  box-shadow: 0 1px 0 0 #f48fb1;
+}
+.active-pink-textarea-2.md-form label.active {
+  color: #f48fb1;
+}
+.active-pink-textarea-2.md-form label {
+  color: #f48fb1;
+}
+.active-pink-textarea-2.md-form textarea.md-textarea:focus:not([readonly])+label {
+  color: #f48fb1;
+}
+
+
+.active-amber-textarea-2 textarea.md-textarea {
+  border-bottom: 1px solid #ffa000;
+  box-shadow: 0 1px 0 0 #ffa000;
+}
+.active-amber-textarea-2.md-form label.active {
+  color: #ffa000;
+}
+.active-amber-textarea-2.md-form label {
+  color: #ffa000;
+}
+.active-amber-textarea-2.md-form textarea.md-textarea:focus:not([readonly])+label {
+  color: #ffa000;
+}
+
+.square {
+	margin-left: 20%;
+    background: #55989f;
+    width: 30vw;
+    height: 30vw;
+		border-radius: 12px;
+
+}
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: blue
+}
+input:focus {
+  border-color: green
+}
+
+.buttonalign{
+  margin-left: 200px;
+}
+.labalign{
+  margin-left: 70px;
+}
+
+</style>
+</head>
+
+<body>
+<div class="row">
+
+<div class="col-md-3">
+  <div class="sidenav">
+	   <div class="login-main-text">
+			 <a class="navbar-brand" href="/home/hassan/Desktop/fyp2frontend/index.html">Mimic Robo</a><br><br>
+        <h2><b>Text to Speech Model</b><br> <br>Procedure to run it : </h2>
+        <ul>
+        <li> <p>Select the speaker from the given list</p> </li>
+        <li> <p>Enter the text whose audio you want to generate</p> </li>
+        <li> <p>Wait, until model is processing the text and then play the audio</p> </li>
+
+        </ul>
+     </div>
+
+<div id="my" style="visibility:hidden; margin-left:10px">
+       <br><br>
+       <h3>Target voice :</h3>
+       <audio controls>
+
+         <source src="/static/output.wav" type="audio/wav">
+         Your browser does not support the audio tag.
+       </audio>
+     </div>
+
+ <div id="my2" style="visibility:hidden; margin-left:10px">
+        <br><br>
+        <h3>Input voice :</h3>
+        <audio controls>
+
+          <source src="/static/LJ037-0171.wav" type="audio/wav">
+          Your browser does not support the audio tag.
+        </audio>
+      </div>
+
+  </div>
+</div>
+
+<div class="col-md-8">
+	<div class="square">
+	<br><br><br><br><br><br><br>
+
+<div class="buttonalign">
+  <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Speaker
+      <span class="caret"></span>
+		  </button>
+      <ul id="demolist" class="dropdown-menu">
+        <li><a href="#">Speaker-1</a></li>
+        <li><a href="#">Speaker-2</a></li>
+      </ul>
+    </div>
+ </div>
+
+<br><br>
+
+<div align="center">
+	<title>Upload new File</title>
+	<h1>Upload new File</h1>
+	<br>
+	<form method=post enctype=multipart/form-data class="button2">
+		<input type=file onchange="readURL();" name=file>
+		<input type=submit value=Upload	 class="button1">
+	</form>
+
+</div>
+
+
+</div>
+
+
+<script>
+
+$('#demolist li').on('click', function(){
+    document.getElementById('my').style.visibility='visible';
+});
+
+function readURL() {
+	console.log("fd");
+	document.getElementById('my2').style.visibility='visible';
+
+}
+
+</script>
+
+</div>
+
+
+
+</div>
+
+</body>
+</html>
