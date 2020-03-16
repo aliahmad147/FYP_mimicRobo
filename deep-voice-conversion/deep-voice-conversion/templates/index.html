@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+b { 
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<p><b>Send a sound file to and from the client/server flask.</b></p>
+
+<p>Please upload the file that you want and submit.</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Upload Files</title>
+
+</head>
+
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" >
+        <input type="submit" value="Upload File" name="submit">
+    </form>
+<audio controls id="audio-example">
+  <!-- One or more source files, each referencing the same audio but in a different file format.
+    The browser will choose the first file which it is able to play. -->
+   <source src="/wp-content/uploads/flamingos.ogg">
+   <source src="/wp-content/uploads/flamingos.mp3">
+
+    You will see this text if native audio playback is not supported.
+    <!-- You could use this fall-back feature to insert a JavaScript-based audio player. -->
+</audio>
+<style>
+#audio-example {
+display: block;
+}
+</style>
+
+	<script src="upload.js"></script>
+</body>
+
+</html>
