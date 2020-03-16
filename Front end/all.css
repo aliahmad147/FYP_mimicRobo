@@ -1,0 +1,75 @@
+
+body {
+  background-color: black;
+}
+
+#uper_bar{
+  width: auto;
+  background-color: blueviolet;
+  height:auto;
+}
+#login-name{
+  font-size: 50px;
+    font-family: Arial, Helvetica;
+    border-bottom-style: dashed;
+    color: black;
+}
+
+.nav-link{
+  color: white;
+  font-size: 100;
+}
+.nav-item{
+  color: white;
+}
+.navbar{
+  background-color:black;
+}
+
+#login-box{
+  border-block-color:black;
+  background-color:white;
+  min-height: 300px;
+  opacity: 0.75;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.user{
+  color: aliceblue;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#icon{
+  background: border-box;
+  background-color:dimgrey;
+}
+#text1{
+  border-radius: 0px;
+  height: 40px;
+}
+#box_hw{
+  height: 40%;
+  width: 100%;
+}
+#text2{
+  border-radius: 0px;
+  height: 40px;
+}
+
+#img-alignment{
+  height: 130px;
+  width: 130px;
+}
+.btn{
+  width: 40%;
+  border-radius: 0px;
+  height: 40px;
+  font-size: 17px;
+}
+#buttons{
+  padding-left: 20%;
+  padding-right: 10%;
+  align-content: center;
+}

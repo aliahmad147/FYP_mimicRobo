@@ -1,0 +1,175 @@
+
+body {
+    background-color: black;
+  }
+  
+  #uper_bar{
+    width: auto;
+    background-color: blueviolet;
+    height:auto;
+  }
+  #UpperText{
+    font-size: 30px;
+      font-family: Arial, Helvetica;
+      border-bottom-style: dashed;
+      color: black;
+  }
+  .a{
+      color: white;
+      text-align: center;
+    
+      background-color: white;
+  }
+  h1 { 
+    color: green; 
+} 
+li{
+    color: white;
+}
+  .nav-link{
+    color: white;
+    font-size: 100;
+  }
+  .nav-item{
+    color: white;
+  }
+  .navbar{
+    background-color:black;
+  }
+  #login-box{
+    border-block-color:black;
+    background-color:white;
+    min-height: 300px;
+    opacity: 0.75;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .user{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #icon{
+    background: border-box;
+    background-color:dimgrey;
+  }
+  #text1{
+    border-radius: 0px;
+    height: 40px;
+    width: 90%;
+    font-size: 14px
+  }
+  #text2{
+    border-radius: 0px;
+    height: 40px;
+    width: 95%;
+    font-size: 14px
+  }
+  #box_hw{
+    height: 40%;
+    width: 100%;
+  }
+
+  
+  #img-alignment{
+    height: 130px;
+    width: 130px;
+  }
+  #buttons{
+    align-content: center;
+  }
+
+  .btn{
+    height: 100%;
+    width: 100%;
+  }
+.btn-link{
+  border-radius: 30%;
+}
+#border1{
+    min-height: 150px;
+    min-width: 50px;
+    margin-left: 30px;
+}
+
+#button_round1{
+  height: 100%;
+  width: 80%;
+  background-image: url("images/audio_book.png");
+  background-size: 100% 100%;
+  background-color: cornsilk;
+  background-clip: content-box;
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  border-style: groove;
+}
+#button_round2{
+  height: 100%;
+  width: 80%;
+  background-image: url("images/voice_conv.png");
+  background-size: 100% 100%;
+  background-color: cornsilk;
+  background-clip: content-box;
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  border-style: groove;
+}
+#button_round3{
+  height: 100%;
+  width: 80%;
+  background-image: url("images/tts.png");
+  background-size: 100% 100%;
+  background-color: cornsilk;
+  background-clip: content-box;
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  border-style: groove;
+}
+
+#pad{
+  padding-right: 10%;
+  padding-left: 0%;
+}
+  #border2{
+    min-height: 150px;
+    min-width: 50px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px 50px 30px;
+  }
+.food1 img {
+    width: 140px;;
+    height: 140px;
+}
+  #border{
+    border-block-color: black;
+    padding-top: 40px;
+  }
+  
+  #gap1{
+    align-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+  }
+  #gap2{
+    align-content: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  
+  }
+  #tableid{
+      align-content: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+  }
