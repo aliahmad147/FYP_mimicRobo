@@ -1,0 +1,74 @@
+.navbar-default{
+  background: #55989f;
+  border: 0;
+  font-family: Poppins;
+
+}
+.btn-lg, .btn-lg:hover, .btn-lg:active, .btn-lg:visited {
+    background-color: #55989f;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family:Poppins;
+}
+
+p{
+  font-family:Roboto;
+}
+
+body {
+   padding-top: 120px;
+ }
+ .navbar-nav.navbar-right li a {
+   font-size:20px;
+   color:white;
+
+ }
+.navbar-brand{
+  font-size:20px;
+  color:#fff !important;
+  font-weight:bold;
+}
+
+
+#showcase img{
+  width:90%;
+  margin-left:45px;
+}
+#showcase .showcase-left{
+  margin-left:-80px;
+}
+#showcase .showcase-right{
+  margin-top:40px;
+}
+
+
+#testimonial{
+  background:#f1f1f1;
+  padding: 190px 410px 90px 0;
+  text-align:center;
+  margin-top:40px;
+}
+
+#testimonial p{
+  font-size:20px;
+  font-family: 'Josefin Sans';
+  color:#000;
+}
+
+#testimonial p.customer{
+  font-size:20px;
+  color:#666;
+}
+
+#contact{
+  margin-top:70px;
+  background:url(../images/6.png);
+  padding:40px;
+  color:#fff;
+  border-top:#333 1px solid;
+  border-bottom:#333 1px solid;
+}
+
+footer{
+  padding:5px;
+}

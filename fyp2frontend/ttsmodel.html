@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>upload</title>
+
+<meta charset="utf-8">
+<title>Text to speech model</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+
+<link rel="stylesheet" href="css/styletts.css">
+
+
+
+
+</head>
+
+<body>
+<div class="row">
+
+<div class="col-md-3">
+  <div class="sidenav">
+     <div class="login-main-text">
+        <h2><b>Text to Speech Model</b><br> <br>Procedure to run it : </h2>
+        <ul>
+        <li> <p>Select the speaker from the given list</p> </li>
+        <li> <p>Enter the text whose audio you want to generate</p> </li>
+        <li> <p>Wait, until model is processing the text and then play the audio</p> </li>
+
+        </ul>
+     </div>
+     <div id="my" style="visibility:hidden; margin-left:10px">
+       <br><br>
+       <h3>Orignal voice :</h3>
+       <audio controls>
+
+         <source src="/home/hassan/Desktop/LJ037-0171.wav" type="audio/wav">
+         Your browser does not support the audio tag.
+       </audio>
+     </div>
+
+  </div>
+</div>
+
+<div class="col-md-8">
+
+  <br><br><br><br><br><br><br><br><br>
+
+<div class="buttonalign">
+  <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Speaker
+      <span class="caret"></span></button>
+      <ul id="demolist" class="dropdown-menu">
+        <li><a href="#">Speaker-1</a></li>
+        <li><a href="#">Speaker-2</a></li>
+      </ul>
+    </div>
+ </div>
+
+<br><br><br>
+
+  <div class="labalign ">
+    <form action = "/tts" method="POST" enctype="multipart/form-data">
+
+      <input name="Text" placeholder="Text" type="text" size="140" />
+
+      <input type="submit" class="button1" value="Generate Voice">
+    </form>
+  </div>
+
+
+
+
+
+<script>
+
+$('#demolist li').on('click', function(){
+    document.getElementById('my').style.visibility='visible';
+});
+
+</script>
+
+</div>
+
+
+
+</div>
+
+</body>
+</html>

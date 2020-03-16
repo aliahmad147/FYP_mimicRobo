@@ -1,0 +1,111 @@
+
+<!doctype html>
+<head>
+
+<link rel="stylesheet" href="css/bootstrap4.min.css" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<style>
+
+
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%;
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 40%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #55989f;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.button1{
+     background-color: crimson;
+border: none;
+color: white;
+padding: 8px 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 12px;
+ }
+.button2{
+     background-color:#55989f;
+border: none;
+color: white;
+padding: 8px 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 12px;
+ }
+
+</style>
+</head>
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="sidenav">
+       <div class="login-main-text">
+          <h2>Voice to voice conversion</h2>
+          <ul>
+            <li>  Upload the target voice</li>
+            <li>  Wait for the model to generate audio </li>
+            <li>  Play the audio</li>
+          </ul>
+       </div>
+    </div>
+
+  </div>
+  <div class="col-md-9">
+
+    <div align="center">
+      <title>Voice to Voice</title>
+      <h1>Upload new voice</h1>
+      <form method=post enctype=multipart/form-data class="button2">
+      <input type=file name=file>
+      <input type=submit value=Upload class="button1">
+    </form>
+
+    </div>
+  </div>
+</div>
